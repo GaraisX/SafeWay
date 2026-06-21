@@ -142,7 +142,7 @@ a {
   min-height: 560px;
   display: flex;
   align-items: center;
-  background: url('bus.png') center/cover no-repeat;
+  background: url('bus.jpg') center/cover no-repeat;
 }
 
 .hero::before {
