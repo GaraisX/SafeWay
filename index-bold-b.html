@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeWay | Droši pārvadājumi Baltijā</title>
+  <link rel="stylesheet" href="styles-bold-b.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="swt2.png" alt="SafeWay logo" class="brand-logo" />
+        <strong>SafeWay</strong>
+      </div>
+      <div class="header-actions">
+        <nav class="main-nav">
+          <a href="#services" data-key="navServices">Pakalpojumi</a>
+          <a href="#contact" data-key="navContact">Kontakti</a>
+        </nav>
+        <label for="language-select" class="sr-only">Valoda</label>
+        <select id="language-select" class="language-select" aria-label="Valodas izvēle">
+          <option value="lv">LV</option>
+          <option value="de">DE</option>
+          <option value="ee">EE</option>
+          <option value="lt">LT</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="kicker"><span data-key="contactRegion">Latvija, Lietuva, Igaunija</span></p>
+        <h1 class="mega">
+          <span class="line" data-key="heroHeading">Uzticami pasažieru pārvadājumi</span>
+        </h1>
+        <p class="hero-lead" data-key="heroText">SafeWay nodrošina ērtu un drošu pasažieru transfēru Latvijas, Lietuvas un Igaunijas teritorijā ar komfortablu mikroautobusu un profesionālu vadītāju.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact" data-key="heroButton">Rezervēt tūlīt</a>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span data-key="navServices">Pakalpojumi</span><span class="dot">●</span>
+          <span>SAFEWAY</span><span class="dot">●</span>
+          <span>BALTIJA 24/7</span><span class="dot">●</span>
+          <span data-key="navServices">Pakalpojumi</span><span class="dot">●</span>
+          <span>SAFEWAY</span><span class="dot">●</span>
+          <span>BALTIJA 24/7</span><span class="dot">●</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="big-label" data-key="navServices">Pakalpojumi</h2>
+        <div class="service-stack">
+          <article class="service-row reveal">
+            <span class="idx">/01</span>
+            <div class="service-body">
+              <h3 data-key="servicesHeading1">Starptautiskie pārvadājumi</h3>
+              <p data-key="servicesText1">Braucieni starp Latviju, Lietuvu un Igauniju ar stingru kvalitātes kontroli.</p>
+            </div>
+          </article>
+          <article class="service-row reveal">
+            <span class="idx">/02</span>
+            <div class="service-body">
+              <h3 data-key="servicesHeading2">Grupu un privātie reisi</h3>
+              <p data-key="servicesText2">Elastīgi risinājumi grupām un ģimenēm, kas ceļo kopā.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-card-simple reveal">
+          <p class="eyebrow" data-key="contactEyebrow">Sazinieties</p>
+          <h2 data-key="contactHeading">Rezervējiet savu nākamo braucienu</h2>
+          <p data-key="contactText">Nosūtiet pieprasījumu un saņemiet atbildi ātri. Drošs un ērtākais veids, kā plānot Baltijas pārvadājumu.</p>
+          <div class="contact-details">
+            <p><strong data-key="contactPhoneLabel">Tālr.:</strong> <span data-key="contactPhone">+371 23334167</span></p>
+            <p><strong data-key="contactEmailLabel">E-pasts:</strong> <span data-key="contactEmail">info@swt.lv</span></p>
+            <p><strong data-key="contactRegionLabel">Reģions:</strong> <span data-key="contactRegion">Latvija, Lietuva, Igaunija</span></p>
+            <a class="button button-primary" href="mailto:info@swt.lv" data-key="contactButton">Sūtīt pieprasījumu</a>
+          </div>
+        </div>
+        <form class="request-form reveal" id="transport-form">
+          <label for="transport-date" data-key="formDateLabel">Kad nepieciešams transports</label>
+          <input id="transport-date" name="transportDate" type="text" data-placeholder-key="formDatePlaceholder" placeholder="Datums un laiks" />
+
+          <label for="transport-address" data-key="formAddressLabel">Sākuma punkta adrese</label>
+          <input id="transport-address" name="transportAddress" type="text" data-placeholder-key="formAddressPlaceholder" placeholder="Ierakstiet adresi" />
+
+          <label for="transport-phone" data-key="formPhoneLabel">Kontakttālrunis</label>
+          <input id="transport-phone" name="transportPhone" type="tel" data-placeholder-key="formPhonePlaceholder" placeholder="+371 ..." />
+
+          <label for="transport-email" data-key="formEmailLabel">Kontakt e-pasts</label>
+          <input id="transport-email" name="transportEmail" type="email" data-placeholder-key="formEmailPlaceholder" placeholder="jūsu@epasts.lv" />
+
+          <label for="transport-comment" data-key="formCommentLabel">Komentārs</label>
+          <textarea id="transport-comment" name="transportComment" data-placeholder-key="formCommentPlaceholder" placeholder="Piezīmes par braucienu"></textarea>
+
+          <button type="submit" class="button button-primary" data-key="formSubmit">Sūtīt pieprasījumu</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <strong class="footer-brand">SafeWay Transfers, SIA</strong>
+        <p data-key="footerTagline">Droši pasažieru pārvadājumi Baltijā</p>
+      </div>
+      <div class="footer-col">
+        <p><a href="tel:+37123334167">+371 23334167</a></p>
+        <p><a href="mailto:info@swt.lv">info@swt.lv</a></p>
+      </div>
+      <div class="footer-col">
+        <p>Reģ. Nr. 40203502852</p>
+        <p>Valmieras nov., Rencēnu pag., "Krāģīši"</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 SafeWay Transfers, SIA</p>
+    </div>
+  </footer>
+
+  <script src="i18n-bold.js"></script>
+</body>
+</html>
