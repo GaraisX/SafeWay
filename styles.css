@@ -122,19 +122,6 @@ a {
   -moz-appearance: none;
 }
 
-.github-link {
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.75rem 1rem;
-  transition: border-color 0.15s ease, color 0.15s ease;
-}
-
-.github-link:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
 .hero {
   position: relative;
   padding: 5rem 0 4rem;
