@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeWay | Droši pārvadājumi Baltijā</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="swt2.png" alt="SafeWay logo" class="brand-logo" />
+        <div>
+          <strong>SafeWay</strong>
+          <span>Mikroautobusu pārvadājumi</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <nav class="main-nav">
+          <a href="#services" data-key="navServices">Pakalpojumi</a>
+          <a href="#contact" data-key="navContact">Kontakti</a>
+        </nav>
+        <label for="language-select" class="sr-only">Valoda</label>
+        <select id="language-select" class="language-select" aria-label="Valodas izvēle">
+          <option value="lv">LV</option>
+          <option value="de">DE</option>
+          <option value="ee">EE</option>
+          <option value="lt">LT</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 data-key="heroHeading">Uzticami pasažieru pārvadājumi</h1>
+          <p data-key="heroText">SafeWay nodrošina ērtu un drošu pasažieru transfēru Latvijas, Lietuvas un Igaunijas teritorijā ar komfortablu mikroautobusu un profesionālu vadītāju.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact" data-key="heroButton">Rezervēt tūlīt</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container service-grid">
+        <article class="service-item">
+          <h3 data-key="servicesHeading1">Starptautiskie pārvadājumi</h3>
+          <p data-key="servicesText1">Braucieni starp Latviju, Lietuvu un Igauniju ar stingru kvalitātes kontroli.</p>
+        </article>
+        <article class="service-item">
+          <h3 data-key="servicesHeading2">Grupu un privātie reisi</h3>
+          <p data-key="servicesText2">Elastīgi risinājumi grupām un ģimenēm, kas ceļo kopā.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-card-simple">
+          <p class="eyebrow" data-key="contactEyebrow">Sazinieties</p>
+          <h2 data-key="contactHeading">Rezervējiet savu nākamo braucienu</h2>
+          <p data-key="contactText">Nosūtiet pieprasījumu un saņemiet atbildi ātri. Drošs un ērtākais veids, kā plānot Baltijas pārvadājumu.</p>
+          <div class="contact-details">
+            <p><strong data-key="contactPhoneLabel">Tālr.:</strong> <span data-key="contactPhone">+371 23334167</span></p>
+            <p><strong data-key="contactEmailLabel">E-pasts:</strong> <span data-key="contactEmail">info@swt.lv</span></p>
+            <p><strong data-key="contactRegionLabel">Reģions:</strong> <span data-key="contactRegion">Latvija, Lietuva, Igaunija</span></p>
+            <a class="button button-primary" href="mailto:info@swt.lv" data-key="contactButton">Sūtīt pieprasījumu</a>
+          </div>
+        </div>
+        <form class="request-form" id="transport-form">
+          <label for="transport-date" data-key="formDateLabel">Kad nepieciešams transpots</label>
+          <input id="transport-date" name="transportDate" type="text" data-placeholder-key="formDatePlaceholder" placeholder="Datums un laiks" />
+
+          <label for="transport-address" data-key="formAddressLabel">Sākuma punkta adrese</label>
+          <input id="transport-address" name="transportAddress" type="text" data-placeholder-key="formAddressPlaceholder" placeholder="Ierakstiet adresi" />
+
+          <label for="transport-phone" data-key="formPhoneLabel">Kontakttālrunis</label>
+          <input id="transport-phone" name="transportPhone" type="tel" data-placeholder-key="formPhonePlaceholder" placeholder="+371 ..." />
+
+          <label for="transport-email" data-key="formEmailLabel">Kontakt e-pasts</label>
+          <input id="transport-email" name="transportEmail" type="email" data-placeholder-key="formEmailPlaceholder" placeholder="jūsu@epasts.lv" />
+
+          <label for="transport-comment" data-key="formCommentLabel">Komentārs</label>
+          <textarea id="transport-comment" name="transportComment" data-placeholder-key="formCommentPlaceholder" placeholder="Piezīmes par braucienu"></textarea>
+
+          <button type="submit" class="button button-primary" data-key="formSubmit">Sūtīt pieprasījumu</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>SafeWay — droši pasažieru pārvadājumi Baltijā</p>
+      <p>© 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      lv: {
+        navServices: 'Pakalpojumi',
+        navContact: 'Kontakti',
+        heroHeading: 'Uzticami pasažieru pārvadājumi',
+        heroText: 'SafeWay nodrošina ērtu un drošu pasažieru transfēru Latvijas, Lietuvas un Igaunijas teritorijā ar komfortablu mikroautobusu un profesionālu vadītāju.',
+        heroButton: 'Rezervēt tūlīt',
+        servicesHeading1: 'Starptautiskie pārvadājumi',
+        servicesText1: 'Braucieni starp Latviju, Lietuvu un Igauniju ar stingru kvalitātes kontroli.',
+        servicesHeading2: 'Grupu un privātie reisi',
+        servicesText2: 'Elastīgi risinājumi grupām un ģimenēm, kas ceļo kopā.',
+        contactEyebrow: 'Sazinieties',
+        contactHeading: 'Rezervējiet savu nākamo braucienu',
+        contactText: 'Nosūtiet pieprasījumu un saņemiet atbildi ātri. Drošs un ērtākais veids, kā plānot Baltijas pārvadājumu.',
+        contactPhoneLabel: 'Tālr.:',
+        contactEmailLabel: 'E-pasts:',
+        contactRegionLabel: 'Reģions:',
+        contactPhone: '+371 23334167',
+        contactEmail: 'info@swt.lv',
+        contactRegion: 'Latvija, Lietuva, Igaunija',
+        contactButton: 'Sūtīt pieprasījumu',
+        formDateLabel: 'Kad nepieciešams transpots',
+        formDatePlaceholder: 'Datums un laiks',
+        formAddressLabel: 'Sākuma punkta adrese',
+        formAddressPlaceholder: 'Ierakstiet adresi',
+        formPhoneLabel: 'Kontakttālrunis',
+        formPhonePlaceholder: '+371 ...',
+        formEmailLabel: 'Kontakt e-pasts',
+        formEmailPlaceholder: 'jūsu@epasts.lv',
+        formCommentLabel: 'Komentārs',
+        formCommentPlaceholder: 'Piezīmes par braucienu',
+        formSubmit: 'Sūtīt pieprasījumu',
+      },
+      de: {
+        navServices: 'Dienstleistungen',
+        navContact: 'Kontakt',
+        heroHeading: 'Zuverlässiger Personentransport',
+        heroText: 'SafeWay bietet einen bequemen und sicheren Passagiertransfer auf dem Gebiet von Lettland, Litauen und Estland mit komfortablem Minibus und professionellem Fahrer.',
+        heroButton: 'Jetzt buchen',
+        servicesHeading1: 'Internationale Transporte',
+        servicesText1: 'Fahrten zwischen Lettland, Litauen und Estland mit strenger Qualitätskontrolle.',
+        servicesHeading2: 'Gruppen- und Privatreisen',
+        servicesText2: 'Flexible Lösungen für Gruppen und Familien, die gemeinsam reisen.',
+        contactEyebrow: 'Kontakt',
+        contactHeading: 'Buchen Sie Ihre nächste Fahrt',
+        contactText: 'Senden Sie eine Anfrage und erhalten Sie schnell eine Antwort. Sicherer und einfachster Weg zur Planung eines baltischen Transports.',
+        contactPhoneLabel: 'Tel.:',
+        contactEmailLabel: 'E-Mail:',
+        contactRegionLabel: 'Region:',
+        contactPhone: '+371 23334167',
+        contactEmail: 'info@swt.lv',
+        contactRegion: 'Lettland, Litauen, Estland',
+        contactButton: 'Anfrage senden',
+        formDateLabel: 'Wann wird der Transport benötigt',
+        formDatePlaceholder: 'Datum und Uhrzeit',
+        formAddressLabel: 'Abfahrtsadresse',
+        formAddressPlaceholder: 'Adresse eingeben',
+        formPhoneLabel: 'Kontakttelefon',
+        formPhonePlaceholder: '+371 ...',
+        formEmailLabel: 'Kontakt-E-Mail',
+        formEmailPlaceholder: 'ihre@adresse.de',
+        formCommentLabel: 'Kommentar',
+        formCommentPlaceholder: 'Anmerkungen zur Fahrt',
+        formSubmit: 'Anfrage senden',
+      },
+      ee: {
+        navServices: 'Teenused',
+        navContact: 'Kontakt',
+        heroHeading: 'Usaldusväärne reisijateveo',
+        heroText: 'SafeWay pakub mugavat ja turvalist reisijateveo transfeeri Läti, Leedu ja Eesti territooriumil mugava minibussiga ja professionaalse juhiga.',
+        heroButton: 'Broneeri kohe',
+        servicesHeading1: 'Rahvusvahelised veod',
+        servicesText1: 'Sõidud Läti, Leedu ja Eesti vahel rangete kvaliteedikontrollidega.',
+        servicesHeading2: 'Gruppi- ja erareisid',
+        servicesText2: 'Paindlikud lahendused gruppidele ja peredele, kes reisivad koos.',
+        contactEyebrow: 'Võta ühendust',
+        contactHeading: 'Broneeri oma järgmine sõit',
+        contactText: 'Saada päring ja saa kiiresti vastus. Turvaline ja lihtsaim viis Balti transpordi planeerimiseks.',
+        contactPhoneLabel: 'Tel:',
+        contactEmailLabel: 'E-post:',
+        contactRegionLabel: 'Regioon:',
+        contactPhone: '+371 23334167',
+        contactEmail: 'info@swt.lv',
+        contactRegion: 'Läti, Leedu, Eesti',
+        contactButton: 'Saada päring',
+        formDateLabel: 'Millal transport on vajalik',
+        formDatePlaceholder: 'Kuupäev ja kellaaeg',
+        formAddressLabel: 'Alguspunkti aadress',
+        formAddressPlaceholder: 'Sisesta aadress',
+        formPhoneLabel: 'Kontakttelefon',
+        formPhonePlaceholder: '+371 ...',
+        formEmailLabel: 'Kontakt e-post',
+        formEmailPlaceholder: 'teie@meil.ee',
+        formCommentLabel: 'Kommentaar',
+        formCommentPlaceholder: 'Märkused sõidu kohta',
+        formSubmit: 'Saada päring',
+      },
+      lt: {
+        navServices: 'Paslaugos',
+        navContact: 'Kontaktai',
+        heroHeading: 'Patikimi keleivių pervežimai',
+        heroText: 'SafeWay siūlo patogų ir saugų keleivių pervežimą Latvijos, Lietuvos ir Estijos teritorijoje su komfortišku mikroautobusu ir profesionaliu vairuotoju.',
+        heroButton: 'Užsakyti dabar',
+        servicesHeading1: 'Tarptautiniai pervežimai',
+        servicesText1: 'Kelionės tarp Latvijos, Lietuvos ir Estijos griežtos kokybės kontrolės sąlygomis.',
+        servicesHeading2: 'Grupinės ir privačios kelionės',
+        servicesText2: 'Lankstūs sprendimai grupėms ir šeimoms, keliaujančioms kartu.',
+        contactEyebrow: 'Susisiekite',
+        contactHeading: 'Užsisakykite kitą kelionę',
+        contactText: 'Siųskite užklausą ir gaukite atsakymą greitai. Saugus ir patogiausias būdas planuoti Baltijos pervežimą.',
+        contactPhoneLabel: 'Tel.:',
+        contactEmailLabel: 'El. paštas:',
+        contactRegionLabel: 'Regionas:',
+        contactPhone: '+371 23334167',
+        contactEmail: 'info@swt.lv',
+        contactRegion: 'Latvija, Lietuva, Estija',
+        contactButton: 'Siųsti užklausą',
+        formDateLabel: 'Kada reikalingas transportas',
+        formDatePlaceholder: 'Data ir laikas',
+        formAddressLabel: 'Pradžios adreso',
+        formAddressPlaceholder: 'Įveskite adresą',
+        formPhoneLabel: 'Kontaktinis telefonas',
+        formPhonePlaceholder: '+371 ...',
+        formEmailLabel: 'Kontaktinis el. paštas',
+        formEmailPlaceholder: 'jūsų@el.paštas',
+        formCommentLabel: 'Komentaras',
+        formCommentPlaceholder: 'Pastabos apie kelionę',
+        formSubmit: 'Siųsti užklausą',
+      },
+      en: {
+        navServices: 'Services',
+        navContact: 'Contact',
+        heroHeading: 'Reliable passenger transport',
+        heroText: 'SafeWay provides a convenient and secure passenger transfer within the territory of Latvia, Lithuania and Estonia with a comfortable minibus and a professional driver.',
+        heroButton: 'Book now',
+        servicesHeading1: 'International transport',
+        servicesText1: 'Trips between Latvia, Lithuania and Estonia with strict quality control.',
+        servicesHeading2: 'Group and private trips',
+        servicesText2: 'Flexible solutions for groups and families traveling together.',
+        contactEyebrow: 'Contact',
+        contactHeading: 'Book your next journey',
+        contactText: 'Send a request and receive a quick response. The safest and easiest way to plan Baltic transport.',
+        contactPhoneLabel: 'Tel:',
+        contactEmailLabel: 'Email:',
+        contactRegionLabel: 'Region:',
+        contactPhone: '+371 23334167',
+        contactEmail: 'info@swt.lv',
+        contactRegion: 'Latvia, Lithuania, Estonia',
+        contactButton: 'Send request',
+        formDateLabel: 'When transport is needed',
+        formDatePlaceholder: 'Date and time',
+        formAddressLabel: 'Departure address',
+        formAddressPlaceholder: 'Enter address',
+        formPhoneLabel: 'Contact phone',
+        formPhonePlaceholder: '+371 ...',
+        formEmailLabel: 'Contact email',
+        formEmailPlaceholder: 'your@email.com',
+        formCommentLabel: 'Comment',
+        formCommentPlaceholder: 'Notes about the journey',
+        formSubmit: 'Send request',
+      },
+    };
+
+    function updateText(lang) {
+      const keys = document.querySelectorAll('[data-key]');
+      keys.forEach(el => {
+        const key = el.getAttribute('data-key');
+        if (!key) return;
+        const value = translations[lang]?.[key];
+        if (value !== undefined) {
+          el.textContent = value;
+        }
+      });
+
+      const placeholders = document.querySelectorAll('[data-placeholder-key]');
+      placeholders.forEach(el => {
+        const key = el.getAttribute('data-placeholder-key');
+        if (!key) return;
+        const value = translations[lang]?.[key];
+        if (value !== undefined) {
+          el.setAttribute('placeholder', value);
+        }
+      });
+
+      document.documentElement.lang = lang;
+    }
+
+    const languageSelect = document.getElementById('language-select');
+    languageSelect.addEventListener('change', event => {
+      updateText(event.target.value);
+    });
+
+    const form = document.getElementById('transport-form');
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+    });
+
+    updateText('lv');
+  </script>
+</body>
+</html>
